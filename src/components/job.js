@@ -1,6 +1,6 @@
 import React from "react";
 
-const Job = ({ Company, Title, Location, DatePosted }) => {
+const Job = ({ Company, Location, DatePosted, Title }) => {
   return (
     <div className="job-row">
       <div className="job-inner">
@@ -11,8 +11,8 @@ const Job = ({ Company, Title, Location, DatePosted }) => {
           />
         </div>
         <div class="job-description">
-          <h3 className="position">{Company}</h3>
-          <h5 className="company-name">{Title}</h5>
+          <h3 className="company-name">{Company}</h3>
+          <h5 className="position">{Title}</h5>
         </div>
         <div className="job-misc">
           <span className="date">{DatePosted}</span>
