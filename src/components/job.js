@@ -1,22 +1,19 @@
 import React from "react";
 
-const Job = ({ Company, Location, DatePosted, Title }) => {
+const Job = () => {
   return (
     <div className="job-row">
       <div className="job-inner">
         <div className="company-logo">
-          <img
-            src={require(`../assets/${Company}.png`)}
-            alt={`${Company} Logo`}
-          />
+          <img src={require(`../assets/Google.png`)} alt={`Google Logo`} />
         </div>
         <div class="job-description">
-          <h3 className="company-name">{Company}</h3>
-          <h5 className="position">{Title}</h5>
+          <h3 className="company-name">Google</h3>
+          <h5 className="position">Senior Software Engineer</h5>
         </div>
         <div className="job-misc">
-          <span className="date">{DatePosted}</span>
-          <span className="location">{Location}</span>
+          <span className="date">8 days ago</span>
+          <span className="location">Mountain View, CA</span>
         </div>
       </div>
     </div>
